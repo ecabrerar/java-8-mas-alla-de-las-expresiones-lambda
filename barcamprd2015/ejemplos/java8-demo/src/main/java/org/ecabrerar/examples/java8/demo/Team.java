@@ -20,15 +20,6 @@ public class Team {
         this.lastTimeWonWorldSeries = lastTimeWonWorldSeries;
     }
 
-    @Override
-    public String toString() {
-        return Objects.toStringHelper(this)
-                .add("id", teamId)
-                .add("name", name)
-                .add("hasWonWoldSeries", hasWonWoldSeries)
-                .add("lastTimeWonWorldSeries", lastTimeWonWorldSeries)
-                .toString();
-    }
 
     public String getTeamId() {
         return teamId;
@@ -62,4 +53,13 @@ public class Team {
         this.lastTimeWonWorldSeries = lastTimeWonWorldSeries;
     }
 
+    @Override
+    public String toString() {
+        return Objects.toStringHelper(this)
+                .add("id", teamId)
+                .add("name", name)
+                .add("hasWonWoldSeries", hasWonWoldSeries)
+                .add("lastTimeWonWorldSeries", lastTimeWonWorldSeries)
+                .toString();
+    }
 }

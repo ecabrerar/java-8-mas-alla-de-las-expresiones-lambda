@@ -50,12 +50,8 @@ public class ExpresionesLambdasBasicas {
                     && t.getLastTimeWonWorldSeries() >= 1990
                     && t.getLastTimeWonWorldSeries() <= 2015;
              }
-        });
-        
-        
-        
-        
-       
+        });   
+      
     }
 
     private void ejercicio2() {
@@ -185,11 +181,7 @@ public class ExpresionesLambdasBasicas {
         
         ExpresionesLambdasBasicas exp = new ExpresionesLambdasBasicas();
         exp.ejecutar();
-
         
     }
-
-   
-   
 
 }
