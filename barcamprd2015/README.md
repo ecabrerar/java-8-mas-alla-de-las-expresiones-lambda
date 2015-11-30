@@ -8,7 +8,7 @@ Java 8 es quizás el cambio más significativo en la historia del lenguaje, dado
 En esta charla vamos a mostrar a los interesados las nuevas características que ofrece Java SE 8, haciendo énfasis en las funcionalidades de programación funcional y los nuevo APIs. 
 
 Bio:
-Graduado de Ingeniería Telemática en la Pontificia Universidad Católica Madre y Maestra (PUCMM). Entusiasta de la tecnología y el software libre, con experiencia en el desarrollo de aplicaciones basadas en Java y otras tecnologías abiertas. Ganador de la beca Linux Training Scholarship 2014 en la categoría Developer Do-Gooder. Ha contribuido en varios proyectos Open Source y también es miembro de opensource.com.
+Graduado de Ingeniería Telemática en la Pontificia Universidad Católica Madre y Maestra (PUCMM). Entusiasta de la tecnología y el software libre, con experiencia en el desarrollo de aplicaciones basadas en Java y otras tecnologías abiertas. Ganador de la beca [Linux Training Scholarship 2014](https://www.linux.com/news/featured-blogs/185-jennifer-cloer/793470-introducing-the-2014-linux-training-scholarship-winners) en la categoría Developer Do-Gooder. Ha contribuido en varios proyectos Open Source y también es miembro de opensource.com.
 
 Facilitador a tiempo parcial en el Curso Final de Grado de la Escuela de Ingeniería y Tecnología de la Universidad Abierta para Adultos (UAPA), Santiago,República Dominicana.
 
