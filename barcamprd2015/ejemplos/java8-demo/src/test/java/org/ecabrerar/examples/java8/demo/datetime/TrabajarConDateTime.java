@@ -5,13 +5,13 @@
  */
 package org.ecabrerar.examples.java8.demo.datetime;
 
-import java.time.Clock;
 import java.time.LocalDate;
 import java.time.Month;
 import java.time.Period;
 import java.time.ZoneId;
 import org.ecabrerar.examples.java8.demo.DiasFestivosRD;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 
@@ -81,8 +81,7 @@ public class TrabajarConDateTime {
        //ZoneId zoneAmerica = ZoneId.of("America/Santo_Domingo");
        ZoneId zoneBerlin = ZoneId.of("Europe/Berlin");
        
-       assertEquals(zone, zoneBerlin);
-
+       assertNotEquals(zone, zoneBerlin);
 
    }
 }
