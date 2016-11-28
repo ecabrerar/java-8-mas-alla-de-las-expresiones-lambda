@@ -200,4 +200,16 @@ public class ProcesandoDatosConStreams {
 
         assertEquals(90, total);
     }
+    
+    @Test
+    public void probar_flatmap(){
+        List<String>  lista = Arrays.asList("BarcampRD", "BarcampRD Lambdas y API  Stream"); 
+
+            Stream stream = lista.stream() 
+              .map(s -> s.split(" ")) //  Stream<String[]> 
+              .flatMap(Arrays::stream)  // Stream<String> 
+              .distinct(); //  Stream<String> de 5 elementos 
+            
+            assertEquals(5, stream.count());
+    }
 }

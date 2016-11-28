@@ -39,26 +39,28 @@ public class StreamBasicos {
         "BarCamp", "MongoDB", "10Gen", "TokuMX", "Nagios", "PUCMM", "Ruby", "JSON", "JSON");
     
     
-      List<String> newList = list
-            .stream()
-            .filter(new Predicate<String>() {
-
-            @Override
-            public boolean test(String t) {
-               return (t.length() % 2)==1;
-            }
-        }).map(String::toLowerCase)
-          .collect(Collectors.toList());
+//      List<String> newList = list
+//            .stream()
+//            .filter(new Predicate<String>() {
+//
+//            @Override
+//            public boolean test(String t) {
+//               return (t.length() % 2)==1;
+//            }
+//        }).map(String::toLowerCase)
+//           .peek(System.out::println) 
+//          .collect(Collectors.toList());
           
-        /*
+       
      List<String> newList1 = list
             .stream()
             .filter(s -> (s.length() % 2)==1)
             .map(String::toLowerCase)
-            .collect(Collectors.toList());*/
+            .peek(s -> s.toString()) 
+            .collect(Collectors.toList());
                    
     
-        newList.forEach(System.out::println);
+        //newList.forEach(System.out::println);
     }
 
        /**

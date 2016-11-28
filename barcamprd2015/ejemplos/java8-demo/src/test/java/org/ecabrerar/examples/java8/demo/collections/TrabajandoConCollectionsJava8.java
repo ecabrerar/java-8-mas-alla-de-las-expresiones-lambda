@@ -69,7 +69,9 @@ public class TrabajandoConCollectionsJava8 {
     @Test
     public void convert_list_to_map_with_java8_lambda() {
 
-        Map<String, Team> mappedTeams = teams.stream().collect(Collectors.toMap(Team::getTeamId, (p) -> p));
+        Map<String, Team> mappedTeams = teams
+                                        .stream()
+                                        .collect(Collectors.toMap(Team::getTeamId, (p) -> p));
 
         assertTrue(mappedTeams.size() == 4);
         assertEquals("NY  Mets", mappedTeams.get(2).getName());
