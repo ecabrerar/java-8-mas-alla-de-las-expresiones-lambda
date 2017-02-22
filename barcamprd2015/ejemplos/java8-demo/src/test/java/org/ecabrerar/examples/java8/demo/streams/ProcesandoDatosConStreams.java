@@ -1,7 +1,10 @@
 package org.ecabrerar.examples.java8.demo.streams;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -11,10 +14,11 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-import org.junit.Test;
-
+import org.ecabrerar.examples.java8.demo.Person;
 import org.ecabrerar.examples.java8.demo.Team;
+import org.junit.Assert;
 import org.junit.BeforeClass;
+import org.junit.Test;
 
 /**
  * @author ecabrerar
@@ -192,7 +196,7 @@ public class ProcesandoDatosConStreams {
 
         assertEquals(10, max.getAsInt());
     }
-    
+
      @Test
     public void intstream_of_sum() {
 
@@ -200,16 +204,89 @@ public class ProcesandoDatosConStreams {
 
         assertEquals(90, total);
     }
-    
+
     @Test
     public void probar_flatmap(){
-        List<String>  lista = Arrays.asList("BarcampRD", "BarcampRD Lambdas y API  Stream"); 
+        List<String>  lista = Arrays.asList("BarcampRD", "BarcampRD Lambdas y API Stream");
 
-            Stream stream = lista.stream() 
-              .map(s -> s.split(" ")) //  Stream<String[]> 
-              .flatMap(Arrays::stream)  // Stream<String> 
-              .distinct(); //  Stream<String> de 5 elementos 
-            
-            assertEquals(5, stream.count());
+        			int total =		lista.stream()
+							              .map(s -> s.split(" ")) //  Stream<String[]>
+							              .flatMap(Arrays::stream)  // Stream<String>
+							              .map(Object::toString)
+							              .distinct()
+							              .peek(System.out::println)
+							              .collect(Collectors.toList()) //  Stream<String> de 5 elementos
+							              .size();
+
+            assertEquals(5, total);
     }
+
+    @Test
+    public void filter_unique_elements() {
+
+    	List<String>  lista = Arrays.asList("BarcampRD", "BarcampRD Lambdas y API Stream");
+
+		int total =		lista.stream()
+				              .flatMap(s ->  Arrays.stream(s.split(" ")))  // Stream<String>
+				              .map(Object::toString)
+				              .distinct()
+				              .peek(System.out::println)
+				              .collect(Collectors.toList()) //  Stream<String> de 5 elementos
+				              .size();
+
+				              assertEquals(5, total);
+
+    }
+
+    @Test
+	public void should_return_the_sum_of_the_value_of_the_given_stream(){
+
+	  Stream<BigDecimal> amounts =  Stream.of(new BigDecimal(100000.00)
+			  								  ,new BigDecimal(499000.50)
+			  								  , new BigDecimal(999.50));
+
+//	  BigDecimal total =  amounts.map(t -> t).reduce(BigDecimal.ZERO, BigDecimal::add);
+
+	 BigDecimal total =  amounts.map(t -> t).reduce(BigDecimal.ZERO,(t, u) -> t.add(u));
+
+	  Assert.assertTrue(new BigDecimal(600000.00).compareTo(total)==0);
+
+	}
+
+	@Test
+	public void should_return_unique_element_of_the_given_list(){
+		List<String>  fruits = Arrays.asList("Naranja","Mango","Naranja","Fresa","Melon","Lechoza","Melon","Mango");
+
+	   int listSize = fruits
+			           .stream()
+			           .distinct()
+			           .collect(Collectors.toList())
+			           .size();
+
+	   Assert.assertEquals(5, listSize);
+	}
+
+	@Test
+	public void should_return_unique_person_of_given_list(){
+		List<Person>  people = new ArrayList<>();
+
+		people.add(new Person("Doug Lea", 53));
+		people.add(new Person("James Gosling", 62));
+		people.add(new Person("Josh Bloch", 55));
+		people.add(new Person("Doug Lea", 53));
+		people.add(new Person("Arun Gupta", 43));
+		people.add(new Person("Bruno Souza", 37));
+		people.add(new Person("Josh Bloch", 55));
+
+
+		int uniquePeople =  people.stream()
+								  .map(Object::toString)
+								  .distinct()
+								  .peek(System.out::println)
+								  .collect(Collectors.toList())
+								  .size();
+
+		 Assert.assertEquals(5, uniquePeople);
+
+	}
 }
