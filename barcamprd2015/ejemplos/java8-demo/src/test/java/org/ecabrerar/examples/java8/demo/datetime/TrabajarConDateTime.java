@@ -14,6 +14,7 @@ import java.time.LocalDate;
 import java.time.Month;
 import java.time.Period;
 import java.time.ZoneId;
+import java.time.temporal.ChronoUnit;
 
 import org.ecabrerar.examples.java8.demo.DiasFestivosRD;
 import org.ecabrerar.examples.java8.demo.TemporadaCiclonica;
@@ -30,15 +31,15 @@ public class TrabajarConDateTime {
     public void calcular_diferencia_entre_dos_fecha_java8_usando_period() {
 
 	    LocalDate sinceBarCamp2013 = LocalDate.of(2013, Month.NOVEMBER, 16);
-	    LocalDate currentDate = LocalDate.of(2015, Month.NOVEMBER, 28);
+	    LocalDate date = LocalDate.of(2015, Month.NOVEMBER, 28);
 
-	    Period betweenDates = Period.between(sinceBarCamp2013, currentDate);
+	    Period betweenDates = Period.between(sinceBarCamp2013, date);
 
 	    int diffInDays = betweenDates.getDays();
 	    int diffInMonths = betweenDates.getMonths();
 	    int diffInYears = betweenDates.getYears();
 
-            System.out.println(String.format("%d %d %d", diffInDays,diffInMonths,diffInYears));
+        System.out.println(String.format("days %d months %d years %d", diffInDays,diffInMonths,diffInYears));
 
 	    assertTrue(diffInDays == 12);
 	    assertTrue(diffInMonths >= 0);
@@ -118,4 +119,53 @@ public class TrabajarConDateTime {
 
        assertFalse(esTemporadaCiclonica);
    }
+
+   @Test
+   public void comparar_fecha() {
+	   LocalDate barCampSTI2013 = LocalDate.of(2013, Month.NOVEMBER, 16);
+
+	   LocalDate today = LocalDate.now();
+	   LocalDate javaOne2013 = LocalDate.of(2013, Month.SEPTEMBER, 18);
+
+	   assertTrue(today.isAfter(barCampSTI2013));
+
+	   assertTrue(javaOne2013.isBefore(barCampSTI2013));
+
+   }
+
+   @Test
+   public void dias_entre_dos_fechas(){
+	   LocalDate startDate = LocalDate.now().minusDays(2);
+	   LocalDate endDate = LocalDate.now();
+
+	   long days1 =  Period.between(startDate, endDate).getDays();
+
+	   assertEquals(2, days1);
+
+	   LocalDate barCampSTI2013 = LocalDate.of(2013, Month.NOVEMBER, 16);
+
+	   LocalDate javaOne2013 = LocalDate.of(2013, Month.SEPTEMBER, 18);
+
+	   long days = ChronoUnit.DAYS.between(javaOne2013, barCampSTI2013);
+
+	   System.out.println(String.format("day  %d", days));
+
+	   assertEquals(59, days);
+   }
+
+
+   @Test
+   public void meses_entre_dos_fechas(){
+
+	   LocalDate barCampSTI2013 = LocalDate.of(2013, Month.NOVEMBER, 16);
+
+	   LocalDate javaOne2013 = LocalDate.of(2013, Month.SEPTEMBER, 18);
+
+	   long months = ChronoUnit.MONTHS.between(javaOne2013, barCampSTI2013);
+
+	   System.out.println(String.format("months  %d", months));
+
+	   assertEquals(1, months);
+   }
+
 }
