@@ -1,6 +1,6 @@
 ### BARCAMPRD 2016 
 
-####Java 8: Expresiones Lambdas y API Stream BarCamp RD 2016
+#### Java 8: Expresiones Lambdas y API Stream BarCamp RD 2016
 > Eudris Cabrera
 
 Mi presentación en el [BarCamp RD 2016](http://barcamp.org.do). 
