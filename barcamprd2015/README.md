@@ -1,6 +1,6 @@
 ### BARCAMPRD 2015 
 
-####Java8 : Más allá de las Expresiones Lambdas
+#### Java8 : Más allá de las Expresiones Lambdas
 > Eudris Cabrera
 
 Mi presentación en el [BarCamp RD 2015](http://barcamp.org.do). En esta charla abordamos las bondades de Java SE 8 haciendo énfasis en las funcionalidades de programación funcional y los nuevo APIs. 
