@@ -105,7 +105,14 @@ public class ExpresionesLambdasBasicas {
     }
     
     
+    public static void printTeamsHasNotWonWorldSeries(List<Team> teams){
+        for (Team team : teams) {            
+             if(!team.isHasWonWoldSeries()){
+               System.out.println(""+ team.toString());
+            }            
+        }
 
+    }
     
     public static void printTeamWhereLastTimeWonWorldSeriesOtherThan(List<Team> teams, int year) {
 
