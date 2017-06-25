@@ -20,13 +20,13 @@ Primero debe descargar [java 9 early access](http://jdk.java.net/9/). Seguir las
       cd java-8-mas-alla-de-las-expresiones-lambda/foocamprd2017/java-9-Jigsaw-ejemplos
    ```
 
-Para compilar el ejemplo I : 
-* Crear un directorio donde vas a colocar los archivos compilados y ponerle el nombre *mods/com.eudriscabrera.examples.greetings* 
+#####Para compilar el ejemplo I : 
+* Crear un directorio donde vas a colocar los archivos compilados y ponerle el nombre **mods/com.eudriscabrera.examples.greetings** 
 ```bash 
     mkdir mods/com.eudriscabrera.examples.greetings
 ```
  
-Usando el comando *javac* para compilar el módulo.
+Usando el comando **javac** para compilar el módulo.
 ```bash
 javac -d mods/com.eudriscabrera.examples.greetings
 \com.eudriscabrera.examples.greetings/com/eudriscabrera/examples/greetings/Main.java
@@ -37,7 +37,7 @@ com.eudriscabrera.examples.greetings/module-info.java
 En el comando anterior la opción -d indica la ruta del directorio donde va a colocar los archivos compilados.
 
 Para compilar el ejemplo I : 
-* Crear un directorio donde vas a colocar los archivos compilados y ponerle el nombre *mods/com.eudriscabrera.examples.greetings.client*
+* Crear un directorio donde vas a colocar los archivos compilados y ponerle el nombre **mods/com.eudriscabrera.examples.greetings.client**
 ```bash 
     mkdir mods/com.eudriscabrera.examples.greetings.client
 ```
@@ -47,8 +47,8 @@ Para correr el módulo
 java --module-path mods -m com.eudriscabrera.examples.greetings/com.eudriscabrera.examples.greetings.Main
 ```
 
-Para compilar el ejemplo II : 
-Este módulo depende del módulo anterior, por lo que debemos especificar la ruta donde está compilado el módulo com.eudriscabrera.examples.greetings
+#####Para compilar el ejemplo II : 
+Este módulo depende del módulo anterior, por lo que debemos especificar la ruta donde está compilado el módulo **com.eudriscabrera.examples.greetings**
 
 ```bash
 javac --module-path mods -d mods/com.eudriscabrera.examples.greetings.client com.eudriscabrera.examples.greetings.client/module-info.java com.eudriscabrera.examples.greetings.client/com/eudriscabrera/examples/greetings/client/GreetingsClient.java
@@ -60,6 +60,6 @@ Para correr el módulo
 java --module-path mods -m com.eudriscabrera.examples.greetings.client/com.eudriscabrera.examples.greetings.client.GreetingsClient
 ```
 
-La opción module-path indica la ruta de los módulos que depende el módulo que está compilando.
+La opción **module-path** indica la ruta de los módulos que depende el módulo que está compilando.
 
 Happy Learning !.
