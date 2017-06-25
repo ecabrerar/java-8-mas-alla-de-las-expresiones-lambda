@@ -16,17 +16,17 @@ Primero debe descargar [java 9 early access](http://jdk.java.net/9/). Seguir las
 
 * Asegurarse de colocar Java 9 en el PATH
 * Clonar el repositorio https://github.com/ecabrerar/java-8-mas-alla-de-las-expresiones-lambda
-* ```bash 
-     cd java-8-mas-alla-de-las-expresiones-lambda/foocamprd2017/java-9-Jigsaw-ejemplos
-```
+ ```bash 
+      cd java-8-mas-alla-de-las-expresiones-lambda/foocamprd2017/java-9-Jigsaw-ejemplos
+   ```
 
 Para compilar el ejemplo I : 
-* Crear un directorio donde vas a colocar los archivos compilados y ponerle el nombre "mods/com.eudriscabrera.examples.greetings" 
+* Crear un directorio donde vas a colocar los archivos compilados y ponerle el nombre *mods/com.eudriscabrera.examples.greetings* 
 ```bash 
     mkdir mods/com.eudriscabrera.examples.greetings
 ```
  
-Usando el comando javac para compilar el módulo.
+Usando el comando *javac* para compilar el módulo.
 ```bash
 javac -d mods/com.eudriscabrera.examples.greetings
 \com.eudriscabrera.examples.greetings/com/eudriscabrera/examples/greetings/Main.java
@@ -37,7 +37,7 @@ com.eudriscabrera.examples.greetings/module-info.java
 En el comando anterior la opción -d indica la ruta del directorio donde va a colocar los archivos compilados.
 
 Para compilar el ejemplo I : 
-* Crear un directorio donde vas a colocar los archivos compilados y ponerle el nombre mods/com.eudriscabrera.examples.greetings.client
+* Crear un directorio donde vas a colocar los archivos compilados y ponerle el nombre *mods/com.eudriscabrera.examples.greetings.client*
 ```bash 
     mkdir mods/com.eudriscabrera.examples.greetings.client
 ```
