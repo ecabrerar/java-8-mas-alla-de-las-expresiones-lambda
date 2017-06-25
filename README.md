@@ -8,6 +8,7 @@ En este espacio encontrarás presentaciones, ejemplos y otros recursos utilizado
 [Barcamp RD 2015](https://github.com/ecabrerar/java-8-mas-alla-de-las-expresiones-lambda/tree/master/barcamprd2015)
 [Barcamp RD 2016](https://github.com/ecabrerar/java-8-mas-alla-de-las-expresiones-lambda/tree/master/barcamprd2016)
 [Seminario Desarrollo Software Local (UASD)](https://github.com/ecabrerar/java-8-mas-alla-de-las-expresiones-lambda/tree/master/seminario_desarrollo_software_local_uasd)
+[Foocamp RD 2017] (https://github.com/ecabrerar/java-8-mas-alla-de-las-expresiones-lambda/tree/master/foocamprd2017)
 
 
 #### Author
