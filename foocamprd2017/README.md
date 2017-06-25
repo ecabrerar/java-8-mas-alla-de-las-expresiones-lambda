@@ -20,7 +20,7 @@ Primero debe descargar [java 9 early access](http://jdk.java.net/9/). Seguir las
       cd java-8-mas-alla-de-las-expresiones-lambda/foocamprd2017/java-9-Jigsaw-ejemplos
    ```
 
-#####Para compilar el ejemplo I : 
+##### Para compilar el ejemplo I : 
 * Crear un directorio donde vas a colocar los archivos compilados y ponerle el nombre **mods/com.eudriscabrera.examples.greetings** 
 ```bash 
     mkdir mods/com.eudriscabrera.examples.greetings
@@ -47,7 +47,7 @@ Para correr el módulo
 java --module-path mods -m com.eudriscabrera.examples.greetings/com.eudriscabrera.examples.greetings.Main
 ```
 
-#####Para compilar el ejemplo II : 
+##### Para compilar el ejemplo II : 
 Este módulo depende del módulo anterior, por lo que debemos especificar la ruta donde está compilado el módulo **com.eudriscabrera.examples.greetings**
 
 ```bash
