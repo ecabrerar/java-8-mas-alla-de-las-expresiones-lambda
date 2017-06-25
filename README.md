@@ -5,10 +5,10 @@ Java 8 es quizás el cambio más significativo en la historia del lenguaje, dado
 En este espacio encontrarás presentaciones, ejemplos y otros recursos utilizados para fines educativos en diferentes eventos donde hemos participado enseñando las bondades de Java 8.
 
 #### Eventos
-[Barcamp RD 2015](https://github.com/ecabrerar/java-8-mas-alla-de-las-expresiones-lambda/tree/master/barcamprd2015)
-[Barcamp RD 2016](https://github.com/ecabrerar/java-8-mas-alla-de-las-expresiones-lambda/tree/master/barcamprd2016)
-[Seminario Desarrollo Software Local (UASD)](https://github.com/ecabrerar/java-8-mas-alla-de-las-expresiones-lambda/tree/master/seminario_desarrollo_software_local_uasd)
-[Foocamp RD 2017] (https://github.com/ecabrerar/java-8-mas-alla-de-las-expresiones-lambda/tree/master/foocamprd2017)
+[Barcamp RD 2015](https://github.com/ecabrerar/java-8-mas-alla-de-las-expresiones-lambda/tree/master/barcamprd2015) |
+[Barcamp RD 2016](https://github.com/ecabrerar/java-8-mas-alla-de-las-expresiones-lambda/tree/master/barcamprd2016) |
+[Seminario Desarrollo Software Local (UASD)](https://github.com/ecabrerar/java-8-mas-alla-de-las-expresiones-lambda/tree/master/seminario_desarrollo_software_local_uasd) |
+[Foocamp RD 2017](https://github.com/ecabrerar/java-8-mas-alla-de-las-expresiones-lambda/tree/master/foocamprd2017)
 
 
 #### Author
