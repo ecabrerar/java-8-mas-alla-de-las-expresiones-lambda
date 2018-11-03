@@ -15,7 +15,7 @@ En este espacio encontrarás presentaciones, ejemplos y otros recursos utilizado
 [Eudris Cabrera](https://github.com/ecabrerar)
 
 Bio:
-Graduado de Ingeniería Telemática en la Pontificia Universidad Católica Madre y Maestra (PUCMM). Entusiasta de la tecnología y el software libre, con experiencia en el desarrollo de aplicaciones basadas en Java y otras tecnologías abiertas. Ganador de la beca [Linux Training Scholarship 2014](https://www.linux.com/news/featured-blogs/185-jennifer-cloer/793470-introducing-the-2014-linux-training-scholarship-winners) en la categoría Developer Do-Gooder. Ha contribuido en varios proyectos Open Source y también es miembro de opensource.com.
+Graduado de Ingeniería Telemática en la Pontificia Universidad Católica Madre y Maestra (PUCMM). Entusiasta de la tecnología y el software libre, con experiencia en el desarrollo de aplicaciones basadas en Java y otras tecnologías abiertas. Ganador de la beca [Linux Training Scholarship 2014](https://www.linuxfoundation.org/about/diversity-inclusiveness/lift-scholarships/archive/#2014) en la categoría Developer Do-Gooder. Ha contribuido en varios proyectos Open Source y también es miembro de opensource.com.
 
 Facilitador a tiempo parcial desde Enero del 2014 – Septiembre 2015 en el Curso Final de Grado de la Escuela de Ingeniería y Tecnología de la Universidad Abierta para Adultos (UAPA), Santiago. Desde Febrero 2016 – Agosto 2016, facilitador en el Diplomado de Programación Java organizado por la MESCYT y el Centro de Tecnología y Educación Permanente (TEP) de la PUCMM, Santiago.
 
